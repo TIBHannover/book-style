@@ -1,14 +1,14 @@
-## Demo Style for Reports
+## Demo Style for Books
 
-Style name: Appoloosa
+Style name: Senner
 
 An example style for reports to produce multi-format outputs from a single source input using the A-Machine extensible publishing pipeline. The style covers: web, PDF, print-on-demand, paged web, and ebook.
 
-Publication demo: https://a-machine.github.io/report-demo/
+Publication demo: https://a-machine.github.io/book-demo/
 
-Repo: https://github.com/a-machine/report-demo
+Repo: https://github.com/a-machine/book-demo
 
-Style code: https://github.com/a-machine/appoloosa-report-style
+Style code: https://github.com/a-machine/senner-book-style
 
 Style issues: https://github.com/orgs/a-machine/projects/1/views/1
 
