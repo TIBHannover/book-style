@@ -48,7 +48,7 @@ it will serve to http://localhost:3000/
 
 #### Color palette
 
-    #FA7268 orange
+    #FA7268 orange - book title; H1 Chapter title; 
     #fab6b2 orange (lighter for blockquote border)
     #F5F4EF creme grey
     #aeb6bb grey sidebar-border-color

@@ -1,91 +1,87 @@
-@charset "UTF-8";
--@font-face {
+/*Senner (Book) - publication style: Version:  June 2023
+
+/*body*/
+
+@font-face {
     font-family :"noto serif", serif;
     font-weight : normal;
     font-style: normal;
-    src : url(../fonts/media/media/NotoSerif-Regular.ttf);
+    src : url(media/NotoSerif-Regular.ttf);
 }
--@font-face {
+@font-face {
     font-family :"noto serif", serif;
     font-weight : normal;
     font-style: italic;
-    src : url(../fonts/media/media/NotoSerif-Italic.ttf);
+    src : url(media/NotoSerif-Italic.ttf);
 }
--@font-face {
+@font-face {
     font-family :"noto serif", serif;
     font-weight : bold;
     font-style: normal;
-    src : url(../fonts/media/media/NotoSerif-Bold.ttf);
+    src : url(media/NotoSerif-Bold.ttf);
 }
--@font-face {
+@font-face {
     font-family :"noto serif", serif;
     font-weight : bold;
     font-style: italic;
-    src : url(../fonts/media/media/NotoSerif-BoldItalic.ttf);
+    src : url(media/NotoSerif-BoldItalic.ttf);
 }
 @font-face {
     font-family: "noto sans", helvetica neue, arial, sans-serif;
     font-weight : normal;
     font-style: normal;
-    src : url(../fonts/media/media/NotoSans-Regular.ttf);
+    src : url(media/NotoSans-Regular.ttf);
 }
 @font-face {
     font-family: "noto sans", helvetica neue, arial, sans-serif;
     font-weight : normal;
     font-style: italic;
-    src : url(../fonts/media/media/NotoSans-Italic.ttf);
+    src : url(media/NotoSans-Italic.ttf);
 }
--@font-face {
+@font-face {
     font-family : "noto sans", helvetica neue, arial, sans-serif;
     font-weight : 500;
     font-style: normal;
-    src : url(../fonts/media/media/NotoSans-Medium.ttf);
+    src : url(media/NotoSans-Medium.ttf);
 }
 
--@font-face {
+@font-face {
     font-family : "noto sans", helvetica neue, arial, sans-serif;
     font-style: bold;
     font-style: normal;
-    src : url(../fonts/media/media/NotoSans-SemiBold.ttf);
+    src : url(media/NotoSans-SemiBold.ttf);
 }
--@font-face {
+@font-face {
     font-family : "noto sans", helvetica neue, arial, sans-serif;
     font-style: bold;
     font-style: italic;
-    src : url(../fonts/media/media/NotoSans-SemiBoldItalic.ttf);
+    src : url(media/NotoSans-SemiBoldItalic.ttf);
 }
 
-
 @page {
-  size: 159mm 229mm;
+  size: 152mm 229mm;
   margin-top: 20mm;
   margin-bottom: 20mm;
 }
 
 @page :first {
-  size: 159mm 229mm;
-  background: url(https://procip.github.io/publichealthstrategie/html/css/media/cover.jpg) ;
-background-size: 159mm 229mm;
+  size: 152mm 229mm;
+  background-image: linear-gradient(#F5F4EF,#F5F4EF 73%,#56ACF6, #9dcef8 27%);
+  background-size: 152mm 229mm;
   display: flex;
-  margin-top: 300mm;
-  color: #001668 ;
+  margin-top: 30mm;
+  color: #FA7268;
   page-break-after: always;
   @bottom-left { content: normal; }
   @bottom-center { content: normal; }
-	@bottom-right { content: normal; }
-	@top-left { content: normal; }
+  @bottom-right { content: normal; }
+  @top-left { content: normal; }
   @top-right { content: normal;}
-  @top-center {
-    content: env(doc-title);
-    font-family: "noto sans", helvetica neue, arial, sans-serif;
-    font-weight: 600;
-   font-size: 32pt;
-    text-align: center;
-    letter-spacing: 0.2pt;
-    word-spacing: 1px;
-   margin-top: -180mm;
+  @top-center { content: normal;}
   }
 }
+
+/*Verso - left page*/ 
 
 @page :left {
   margin-left: 15mm;
@@ -154,55 +150,6 @@ background-size: 159mm 229mm;
   @top-right { content: normal; }
 }
 
-#cover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-
-#cover img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
-
-.coverpage {
-  position: absolute;
-  /*width: 210mm;
-  height: 297mm;*/
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/cover.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -20mm;
-  left: -20mm;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-.backpage {
-  position: absolute;
-  /*width: 210mm;
-  height: 297mm;*/
-  width: 130%;
-  height: 120%;
-  /*background-color: black;*/
-  /*background-image: url("../images/backpage.png");*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -20mm;
-  left: -20mm;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
 
 html,
 body,
@@ -294,6 +241,8 @@ html {
   word-wrap: break-word;
 }
 
+html body { background-color: transparent!important;}
+
 nav {
   margin: 2em 0;
   break-before: always;
@@ -341,6 +290,7 @@ nav li a::after {
 }
 
 /* Section Labels */
+
 .tocpage nav ol:first-child li a::after {
   content: "";
 }
@@ -350,29 +300,41 @@ nav li a::after {
 .tocpage nav ol:first-child li a::before  {
   flex: none;
 }
-
 .tocpage nav ol:first-child li > ol li a::before  {
   flex: auto !important;
 }
-.titlepage {
+
+div.titlepage {
+  height: 100vh;
+  background-image: url("media/qr.png");
+  /*-webkit-filter: drop-shadow( -5px 5px 5px rgb(165, 165, 165) );
+  filter: drop-shadow( -5px 5px 5px rgb(146, 8, 8)); */
+  background-position: 50% 90%;
+  background-size: 20%;
+  background-repeat: no-repeat; /*logo cover image*/
+  margin-top: 0em;
+  margin-bottom: 0em;
   text-align: center;
-font-family: "noto sans", helvetica neue, arial, sans-serif;
 }
+
 h1.booktitle {
   margin-bottom: 10px;
+  color: #FA7268;
 }
 h2.booksubtitle {
   margin-top:0;
   margin-bottom: 50px;
+  color: #FA7268;
 }
 h3.bookauthor {
-  font-size: 9pt;
+  font-size: 12pt;
+  margin-bottom: 20px;
 }
 h1.part { display: none; }
 .article-title {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
   font-size: 32pt;
-  color: #001668;
+  color: #FA7268;
   margin-bottom: 2em;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -398,15 +360,17 @@ h1.part { display: none; }
 }
 
 /*Literaturverzeichnis*/
+
 .article-bibliography-header {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
-  font-size: 24pt;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: left;
   color: rgb(25,43,83);
   margin-bottom: 0.5em;
   margin-top: 2em;
   page-break-inside: avoid;
   page-break-after: avoid;
-  text-align: center;
   text-transform: none;
   hyphens: manual;
   white-space: pre-line;
@@ -693,7 +657,7 @@ h1 {
   font-weight: 400
 }
 
-h1 strong { font-weight: 400;}
+h1 strong {font-weight: 400;}
 
 h2 {
   font-size: 15pt; /* 1.395rem */
@@ -1146,7 +1110,6 @@ ol.upper-latin {
   }
 
   @page {
-    size: 159mm 229mm;
+    size: 152mm 229mm;
   }
-
 }
