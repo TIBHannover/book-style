@@ -57,7 +57,8 @@ it will serve to http://localhost:3000/
     #56ACF6 blue
     #9DCEF8 light blue (+table header)
     #000000 black
-    #EAEFEE grey table line
+    #EAEFEE grey table line, hr
     #989898 grey visited link
     #33333370 text-shadow
+    #727272 inline citation text
 

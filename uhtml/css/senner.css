@@ -318,10 +318,13 @@ div.titlepage {
 }
 
 h1.booktitle {
+  font-size: 32pt;
+  font-weight: 600;
   margin-bottom: 10px;
   color: #FA7268;
 }
 h2.booksubtitle {
+  font-size: 22pt;
   margin-top:0;
   margin-bottom: 50px;
   color: #FA7268;
@@ -330,13 +333,18 @@ h3.bookauthor {
   font-size: 12pt;
   margin-bottom: 20px;
 }
+h4.bookversion {
+  font-size: 12px;
+  color: #000000;
+}
+
 h1.part { display: none; }
 .article-title {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
   font-size: 32pt;
   color: #FA7268;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
   page-break-inside: avoid;
   page-break-after: avoid;
   text-align: center;
@@ -377,9 +385,10 @@ h1.part { display: none; }
   letter-spacing: 0pt;
   word-spacing: 1px;
 }
+
 .csl-entry {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
-  font-size:  9.5pt;
+  font-size:  9pt;
   line-height: 15pt;
   margin-bottom: 9pt;
   letter-spacing: 0.2pt;
@@ -609,7 +618,7 @@ blockquote:before {
   top: -10px;
   z-index: 5;
   position: absolute;
-  color: rgb(0,22,104);
+  color: #56ACF6;
   opacity: 1;
 }
 
@@ -628,8 +637,7 @@ blockquote  p.att { text-align: right; }
 h2, h2 strong {
 font-family: "noto sans", helvetica neue, arial, sans-serif;
 margin-top: 1.5em;
-color: rgb(25,43,83);
-font-weight: 500;
+color: #000000;
 }
 h3, h3 strong,
 h4, h4 strong,
@@ -637,14 +645,13 @@ h5,
 h6 {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
   margin-top: 1.5em;
-  color: rgb(25,43,83);
-  font-weight: 500;
+  color: #000000;
 }
 
 h1 {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
-  font-size: 20pt; /* 2.233rem */
-  color: rgb(25,43,83);  /*rgb(15,100,167)*/
+  font-size: 26pt; /* 2.233rem */
+  color: #000000;  /*rgb(15,100,167)*/
   margin-bottom: 2em;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -660,10 +667,11 @@ h1 {
 h1 strong {font-weight: 400;}
 
 h2 {
-  font-size: 15pt; /* 1.395rem */
+  font-size: 22pt; /* 1.395rem */
   font-family: "noto sans", helvetica neue, arial, sans-serif;
   text-transform: none;
   font-weight: 500;
+  font-style: bold;
   /*margin: 1.5em 0 1.2em 0;*/
   margin-top: 20pt;
   margin-bottom: 9pt;
@@ -672,7 +680,7 @@ h2 {
 }
 
 h3 {
-  font-size: 13pt; /* 1.209rem */
+  font-size: 18pt; /* 1.209rem */
   margin-top: 20pt;
   page-break-inside: avoid;
   page-break-after: avoid;
@@ -681,7 +689,7 @@ h3 {
 }
 
 h4 {
-  font-size: 11pt; /* 1.023rem */
+  font-size: 15pt; /* 1.023rem */
   margin-top: 20pt;
   margin-bottom: 9pt;
   font-weight: 500;
@@ -692,26 +700,36 @@ h4 {
 h5 {
   font-family : "noto sans", helvetica neue, arial, sans-serif;
   font-weight: 500;
-  font-size: 10pt; /* 0.930rem */
+  font-size: 13pt; /* 0.930rem */
+  margin-top: 20pt;
+  margin-bottom: 9pt;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+h6 {
+  font-family : "noto sans", helvetica neue, arial, sans-serif;
+  font-weight: 500;
+  font-size: 11pt; /* 0.930rem */
   margin-top: 20pt;
   margin-bottom: 5pt;
   page-break-inside: avoid;
   page-break-after: avoid;
 }
+
 hr {
     border: 0;
+    margin-top: 14pt;
     height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    background: #9DCEF8;
+    /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
     }
 
 hr.br { border:0; height: 0px; }
 
-
 .one ol li {
   list-style-type: decimal;
 }
-
 
 h1:before {
   display: block;
@@ -723,7 +741,7 @@ h1:before {
 }
 
 .footnotes ol {
-  font-size: 9pt;
+  font-size: 6pt;
   line-height: 10.8pt;
   list-style-position: outside;
   font-family: "noto sans", helvetica neue, arial, sans-serif;
@@ -731,7 +749,7 @@ h1:before {
 
 .footnotes ol li p {
   text-indent: 0;
-  font-size: 9pt;
+  font-size: 6pt;
   line-height: 10.75pt;
   word-wrap: break-word;
   font-family: "noto sans", helvetica neue, arial, sans-serif;
@@ -750,7 +768,24 @@ li[id*="fn"] {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
 }
 
+.footnote-counter {font-size: 10px; font-weight: 500;}
+
+.fnlist p {
+  text-indent: 0;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0.2em 0 0.5em 0;
+  font-size: 10px; /*0.76rem*/
+  font-family: "noto sans", helvetica neue, arial, sans-serif;
+  text-align: left;
+}
+
+.citation {
+  color: #727272;
+}
+
 /*epub*/
+
 .footnote-content {
   color: black;
   text-indent: 0;
