@@ -87,7 +87,7 @@
   margin-left: 15mm;
   margin-right: 20mm;
   @top-left {
-    content: " ";
+    content: env(pub-title); /*env(pub-title) env(doc-title)*/
     font-family: "noto sans", helvetica neue, arial, sans-serif;
     font-weight: normal;
     font-style: italic;
@@ -116,7 +116,7 @@
   margin-left: 20mm;
   margin-right: 15mm;
   @top-right {
-     content: env(doc-title); /*env(pub-title)*/
+     content: string(chapter-title);
      font-family: "noto sans", helvetica neue, arial, sans-serif;
      font-weight: normal;
      font-style: italic;
@@ -341,6 +341,7 @@ h4.bookversion {
 h1.part { display: none; }
 .article-title {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
+  string-set: chapter-title content(text);
   font-size: 32pt;
   color: #FA7268;
   margin-bottom: 1.5em;
