@@ -1,4 +1,4 @@
-/*Senner (Book) - publication style: Version:  June 2023
+/*Senner (Book) - publication style: Version: June 2023
 
 /*body*/
 
@@ -6,56 +6,56 @@
     font-family :"noto serif", serif;
     font-weight : normal;
     font-style: normal;
-    src : url(media/NotoSerif-Regular.ttf);
+    src : url(NotoSerif-Regular.ttf);
 }
 @font-face {
     font-family :"noto serif", serif;
     font-weight : normal;
     font-style: italic;
-    src : url(media/NotoSerif-Italic.ttf);
+    src : url(NotoSerif-Italic.ttf);
 }
 @font-face {
     font-family :"noto serif", serif;
     font-weight : bold;
     font-style: normal;
-    src : url(media/NotoSerif-Bold.ttf);
+    src : url(NotoSerif-Bold.ttf);
 }
 @font-face {
     font-family :"noto serif", serif;
     font-weight : bold;
     font-style: italic;
-    src : url(media/NotoSerif-BoldItalic.ttf);
+    src : url(NotoSerif-BoldItalic.ttf);
 }
 @font-face {
     font-family: "noto sans", helvetica neue, arial, sans-serif;
     font-weight : normal;
     font-style: normal;
-    src : url(media/NotoSans-Regular.ttf);
+    src : url(NotoSans-Regular.ttf);
 }
 @font-face {
     font-family: "noto sans", helvetica neue, arial, sans-serif;
     font-weight : normal;
     font-style: italic;
-    src : url(media/NotoSans-Italic.ttf);
+    src : url(NotoSans-Italic.ttf);
 }
 @font-face {
     font-family : "noto sans", helvetica neue, arial, sans-serif;
     font-weight : 500;
     font-style: normal;
-    src : url(media/NotoSans-Medium.ttf);
+    src : url(NotoSans-Medium.ttf);
 }
 
 @font-face {
     font-family : "noto sans", helvetica neue, arial, sans-serif;
     font-style: bold;
     font-style: normal;
-    src : url(media/NotoSans-SemiBold.ttf);
+    src : url(NotoSans-SemiBold.ttf);
 }
 @font-face {
     font-family : "noto sans", helvetica neue, arial, sans-serif;
     font-style: bold;
     font-style: italic;
-    src : url(media/NotoSans-SemiBoldItalic.ttf);
+    src : url(NotoSans-SemiBoldItalic.ttf);
 }
 
 @page {
@@ -306,7 +306,7 @@ nav li a::after {
 
 div.titlepage {
   height: 100vh;
-  background-image: url("media/qr.png");
+  background-image: url("qr.png");
   /*-webkit-filter: drop-shadow( -5px 5px 5px rgb(165, 165, 165) );
   filter: drop-shadow( -5px 5px 5px rgb(146, 8, 8)); */
   background-position: 50% 90%;
@@ -374,7 +374,7 @@ h1.part { display: none; }
   font-size: 15pt;
   font-weight: 500;
   text-align: left;
-  color: rgb(25,43,83);
+  color: #000000;
   margin-bottom: 0.5em;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -388,7 +388,7 @@ h1.part { display: none; }
 
 .csl-entry {
   font-family: "noto sans", helvetica neue, arial, sans-serif;
-  font-size:  9pt;
+  font-size:  8pt;
   line-height: 15pt;
   margin-bottom: 9pt;
   letter-spacing: 0.2pt;
@@ -1148,3 +1148,5 @@ ol.upper-latin {
     size: 152mm 229mm;
   }
 }
+
+
