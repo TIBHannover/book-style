@@ -1,4 +1,4 @@
-## Demo Style for Books
+## Book Style for use with Fidus Writer or other CSS Paged Media
 
 Style name: Senner
 
