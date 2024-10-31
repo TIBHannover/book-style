@@ -2,12 +2,12 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="fidus" xml:lang="en-US" prefix="cc: http://creativecommons.org/ns#">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="fidus">3</dc:identifier>
-    <dc:title>Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!</dc:title>
+    <dc:title>Book demo</dc:title>
     <dc:creator>
-      Author; Author; Author; Author; Author
+      Author #1; Author #2
     </dc:creator>
     <dc:language>en-US</dc:language>
-    <meta property="dcterms:modified">2024-10-31T16:12:37Z</meta>
+    <meta property="dcterms:modified">2024-10-31T16:46:30Z</meta>
     <dc:date>2024-10-31</dc:date>
     <dc:rights>Creative Commons International 4.0</dc:rights>
     <dc:publisher>A Publisher</dc:publisher>
