@@ -1,0 +1,50 @@
+\documentclass[11pt]{book}
+
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{wrapfig}
+                
+\usepackage[backend=biber,hyperref=false,citestyle=authoryear,bibstyle=authoryear]{biblatex}
+                
+\bibliography{bibliography}
+            
+\usepackage{graphicx}
+                
+\usepackage{calc}
+                
+\newlength{\imgwidth}
+                
+\newcommand\scaledgraphics[2]{%
+                
+\settowidth{\imgwidth}{\includegraphics{#1}}%
+                
+\setlength{\imgwidth}{\minof{\imgwidth}{#2\textwidth}}%
+                
+\includegraphics[width=\imgwidth,height=\textheight,keepaspectratio]{#1}%
+                
+}
+            
+\usepackage{tabu}
+\usepackage{docmute}
+\title{Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!}
+\author{Author; Author; Author; Author; Author}
+\date{ID - v1.0B UTC: Fri Jan 12 16:16:55 2024 UTC DOI: 10.1000/100}
+\begin{document}
+\maketitle
+\def\title#1{\chapter{#1}}
+\tableofcontents
+
+        \input{chapter-1}
+        
+        \input{chapter-2}
+        
+        \input{chapter-3}
+        
+        \input{chapter-4}
+        
+        \input{chapter-5}
+        
+
+
+\printbibliography[title={Bibliography}]
+\end{document}
