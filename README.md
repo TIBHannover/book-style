@@ -2,15 +2,7 @@
 
 Style name: Senner
 
-An example style for reports to produce multi-format outputs from a single source input using the A-Machine extensible publishing pipeline. The style covers: web, PDF, print-on-demand, paged web, and ebook.
-
-Publication demo: https://a-machine.github.io/book-demo/
-
-Repo: https://github.com/a-machine/book-demo
-
-Style code: https://github.com/a-machine/senner-book-style
-
-Style issues: https://github.com/orgs/a-machine/projects/1/views/1
+An example style for reports to produce multi-format outputs from a single source input using the extensible publishing pipeline. The style covers: web, PDF, print-on-demand, paged web, and ebook.
 
 v1.0, 2023
 
@@ -28,11 +20,9 @@ v1.0, 2023
 
 Respective open-source licences apply.
 
-Code by A-Machine is GPLv3 https://www.gnu.org/licenses/gpl-3.0.en.html 
+Code is GPLv3 https://www.gnu.org/licenses/gpl-3.0.en.html 
 
 ### Development
-
-Run apps locally https://github.com/a-machine/opd/wiki/Running-Design-Apps-As-Local
 
 Vivliostyle path
 
